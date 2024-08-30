@@ -34,11 +34,11 @@ Make sure your Developer Tools are open at all times while working on this proje
 
 Before you click the "Complete Assessment" button on the Learning Platform, add your answers below each question and make a commit.
 
-1. When a child is clicked on in the browser, which module contains the code that will execute on that event happening? Can you explain the algorithm of that logic?
-   > Your answer here
+1. When a child is clicked on in the browser, which module contains the code that will execute on that event happening? Can you explain the algorithm of that logic? 
+   > Your answer here The kidsList.js module contains the logic for handling clicks and showing alerts. The Kids() function sets up the HTML and attaches the event listener. The event listener in kidsList.js reacts to click events, processes the data attributes, and triggers the alert.
 2. In the **Pairings** module, why must the `findCelebrityMatch()` function be invoked inside the `for..of` loop that iterates the kids array?
-   > Your answer here
+   > Your answer here the function's purpose is to find and return the celebrity that matches each child’s celebrityId since each child can be paired with a different celebrity, you need to determine the appropriate celebrity for each child individually.
 3. In the **CelebrityList** module, can you describe how the name of the sport that the celebrity plays can be displayed in the window alert text?
-   > Your answer here
+   > Your answer here we use data-sport to store the sport information in each list item we retrieve this information when a list item is clicked by accessing the data-sport attribute of the clicked element. we then use the window.alert to show it in the browser when the celebrity is clicked on
 4. Can you describe, in detail, the algorithm that is in the `main` module?
-   > Your answer here
+   > Your answer here we import the functions from each module. they are supposed to return html so it can be included in the html on the web page. We use the document.querySelector to find the DOM. We then created the html with what we imported kids, celebrities, and pairings. The content from what we imported will be used in that html and then put on a webpage by using mainContainer.innerHTML = applicationHTML. We then have what we need for everything to show up on the webpage.

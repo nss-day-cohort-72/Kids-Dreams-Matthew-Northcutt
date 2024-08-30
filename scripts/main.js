@@ -18,7 +18,7 @@ const applicationHTML = `
     </article>
 
     <article class="assignments">
-        <h2>Pairings</h2>
+        <h2>${Pairings()}</h2>
     </article>
 `
 
